@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC2_BST
+namespace UC3_BST
 {
-    class BST
+    public class BST
     {
         TreeNode root;
         int treeSize = 0;
@@ -29,6 +29,24 @@ namespace UC2_BST
             }
             return treeSize;
         }
+        public int Search(int data)
+        {
+            if (root == null)
+            {
+                Console.WriteLine("Binary Search Tree is Empty");
+                return 0;
+            }
+            else
+            {
+                return Search(data);
+            }
+        }
+
+        internal bool IfExists(int v, BST binarySearchTree)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Display()
         {
             if (root == null)

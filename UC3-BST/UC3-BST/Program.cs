@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace UC2_BST
+namespace UC3_BST
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             BST binarySearchTree = new BST();
             binarySearchTree.Insert(56);
@@ -21,7 +21,10 @@ namespace UC2_BST
             binarySearchTree.Insert(63);
             binarySearchTree.Insert(67);
             binarySearchTree.Display();
+            bool result = binarySearchTree.IfExists(63, binarySearchTree);
             Console.WriteLine("size of binary search tree is : " + binarySearchTree.Size());
+            Console.WriteLine(result + " found in binary search tree");
+            Console.ReadKey();
         }
     }
 }
