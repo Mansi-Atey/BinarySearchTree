@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UC1_BST
+namespace UC2_BST
 {
     public class TreeNode
     {
